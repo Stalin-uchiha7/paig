@@ -13,6 +13,11 @@ const SIDEBAR_MENU = [{
     icon: <CodeWindowIcon className="list-svg-icon" />,
     sidebar: UI_CONSTANTS.PAIG_NAVIGATOR,
     child: [{
+        to: "/ai_catalog",
+        name: "AI Catalog",
+        isChild: true,
+        sidebar: UI_CONSTANTS.AI_CATALOG
+    }, {
         to: "/ai_applications",
         name: "AI Applications",
         isChild: true,

@@ -12,6 +12,7 @@ const {
     PAIG_GUARD,
     SETTINGS,
 	DASHBOARD,
+    AI_CATALOG,
     AI_APPLICATIONS,
     SECURITY,
     AUDITS,
@@ -49,6 +50,9 @@ const {
 const SIDEBAR_MENU_ITEMS = {
     [PAIG_NAVIGATOR]: {
         SUBMENU: {
+            [AI_CATALOG]: {
+                TABS: [AI_CATALOG]
+            },
             [AI_APPLICATIONS]: {
                 TABS: [AI_APPLICATIONS, AI_APPLICATIONS_PERMISSIONS, AI_APPLICATIONS_API_KEYS]
             },
@@ -119,6 +123,7 @@ const UI_FEATURE_SIDEBAR_TABS = {
 
 const UI_DEFAULT_FEATURE_SIDEBAR_TABS = {
     [PAIG_NAVIGATOR]: {
+        [AI_CATALOG]: {},
         [AI_APPLICATIONS]: {
             TABS: [AI_APPLICATIONS, AI_APPLICATIONS_PERMISSIONS, AI_APPLICATIONS_API_KEYS]
         }
@@ -429,6 +434,9 @@ const featurePermissionUIMap = {
     },
     'portal.docs': {
         propertyForShowHide: [DOCS]
+    },
+    'governance.ai_catalog': {
+        propertyForShowHide: [`${PAIG_NAVIGATOR}.${AI_CATALOG}`]
     },
     'governance.ai_applications': {
         propertyForShowHide: [`${PAIG_NAVIGATOR}.${AI_APPLICATIONS}.${AI_APPLICATIONS}`, `${PAIG_NAVIGATOR}.${AI_APPLICATIONS}.${AI_APPLICATIONS_PERMISSIONS}`, `${PAIG_NAVIGATOR}.${AI_APPLICATIONS}.${AI_APPLICATIONS_API_KEYS}`]

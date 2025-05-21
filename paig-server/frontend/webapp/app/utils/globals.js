@@ -7,6 +7,7 @@ const UI_CONSTANTS = {
     PAIG_GUARD: 'PAIG_GUARD',
     SETTINGS: 'SETTINGS',
     DASHBOARD: 'DASHBOARD',
+    AI_CATALOG: 'AI_CATALOG',
     AI_APPLICATIONS: 'AI_APPLICATIONS',
     USER_MANAGEMENT: 'USER_MANAGEMENT',
     PORTAL_USERS: 'PORTAL_USERS',
@@ -57,6 +58,7 @@ const FEATURE_PERMISSIONS = {
         REPORTS: {PROPERTY: 'portal.reports'}
     },
     GOVERNANCE: {
+        AI_CATALOG: {PROPERTY: 'governance.ai_catalog'},
         AI_APPLICATIONS: {PROPERTY: 'governance.ai_applications'},
         AI_POLICIES: {PROPERTY: 'governance.ai_policies'},
         AI_API_KEYS: {PROPERTY: 'governance.ai_api_keys'},

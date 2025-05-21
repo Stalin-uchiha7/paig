@@ -23,6 +23,7 @@ import guardrailStore from './s_guardrail_store';
 import guardrailResponseTemplateStore from './s_guardrail_response_template_store';
 import guardrailConnectionProviderStore from './s_guardrail_connection_provider_store';
 import shieldStore from './s_shield_store';
+import aiCatalogStore from './s_ai_catalog_store';
 
 const stores = {
 	generalStore,
@@ -49,7 +50,8 @@ const stores = {
 	guardrailResponseTemplateStore,
 	guardrailConnectionProviderStore,
 	shieldStore,
-	aiApplicationApiKeyStore
+	aiApplicationApiKeyStore,
+	aiCatalogStore
 }
 
 export default stores;

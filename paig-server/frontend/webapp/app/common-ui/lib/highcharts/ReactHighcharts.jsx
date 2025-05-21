@@ -9,6 +9,7 @@ import HeatMap from 'highcharts/modules/heatmap';
 import Accessibility from 'highcharts/modules/accessibility';
 import AddNoDataModule from 'highcharts/modules/no-data-to-display';
 import HighChartWordCloud from 'highcharts/modules/wordcloud';
+import HighchartsFunnel from 'highcharts/modules/funnel';
 
 HighchartsExporting(Highcharts);
 HighchartsExportingOffline(Highcharts);
@@ -18,6 +19,7 @@ AddNoDataModule(Highcharts);
 HighchartsDrillDown(Highcharts);
 HighChartWordCloud(Highcharts);
 HighchartsMore(Highcharts);
+HighchartsFunnel(Highcharts);
 
 class ReactHighcharts extends Component {
   constructor(props){
